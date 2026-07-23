@@ -18,6 +18,7 @@ span {
     margin-bottom: 1rem;
 }
 
+/* BUTTONS */
 .button-wrap {
     display: flex;
     flex-direction: column;
@@ -30,9 +31,14 @@ button {
     border: none;
 }
 
+/* 
 .download {
     width: 150px;
 }
+
+.question-button {
+    width: 115px;
+} */
 
 .image-grid {
     display: grid;
