@@ -13,6 +13,27 @@ span {
     margin: auto;
 }
 
+.hero__title,
+.hero__sub-title {
+    margin-bottom: 1rem;
+}
+
+.button-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button {
+    border-radius: 30px;
+    padding: 1rem;
+    border: none;
+}
+
+.download {
+    width: 150px;
+}
+
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -29,10 +50,46 @@ main {
     padding: 1rem;
 }
 
-article {
-    text-align: center;
-}
-
+article,
 footer {
     text-align: center;
+    line-height: 1.5;
+}
+
+.description-heading,
+.description-text {
+    margin-bottom: 1rem;
+}
+
+
+/* 
+FOOTER STYLES ARE REPETITIVE */
+
+.footer__flex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 55vh;
+    /*PROBABLY NEEDS CHANGE (VH)*/
+    gap: 1rem;
+}
+
+.footer__flex h2 {
+    z-index: 1;
+}
+
+.footer__flex p {
+    z-index: 1;
+}
+
+.footer__flex button {
+    z-index: 1;
+    margin-inline: auto;
+}
+
+.footer__flex img {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.15;
 }
