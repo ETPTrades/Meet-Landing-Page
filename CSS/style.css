@@ -99,3 +99,19 @@ FOOTER STYLES ARE REPETITIVE */
     z-index: 0;
     opacity: 0.15;
 }
+
+/* 
+MEDIA QUERIES */
+
+@media(min-width: 768px) {
+    .image-grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .image-grid img {
+        width: 200px;
+        height: auto;
+    }
+}
