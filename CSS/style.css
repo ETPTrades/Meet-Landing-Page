@@ -1,0 +1,136 @@
+/* TODO: 
+ */
+
+:root {
+    /* COLORS */
+    --cyan-600: hsl(192, 37%, 48%);
+    --cyan-300: hsl(192, 90%, 77%);
+    --purple-600: hsl(268, 34%, 53%);
+    --purple-300: hsl(268, 100%, 86%);
+    --slate-900: hsl(240, 21%, 20%);
+    --slate-600: hsl(240, 10%, 57%);
+    --slate-300: hsl(240, 18%, 85%);
+    --white: hsl(0, 0%, 98%);
+
+    /* FONTS */
+    --fs-700: 700;
+
+}
+
+/* GLOBAL */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* HEADER STYLES */
+.header {
+    /* border: 2px solid orangered; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo {
+    width: 118px;
+    height: 28px;
+    margin-block: 48px 64px;
+}
+
+.header__image {
+    width: 433px;
+    height: 160px;
+    margin-bottom: 48px;
+}
+
+.header__description {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 32px;
+    text-align: center;
+}
+
+.header__title {
+    margin-bottom: 24px;
+}
+
+.header__paragraph {
+    margin-bottom: 24px;
+    color: var(--slate-600);
+}
+
+.header__button-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* BUTTON STYLES */
+
+button {
+    border: none;
+    border-radius: 29px;
+    height: 56px;
+    font-weight: var(--fs-700);
+}
+
+.header__download-btn {
+    width: 193px;
+    color: var(--white);
+    background-color: var(--cyan-600);
+}
+
+.header__question-btn {
+    width: 161px;
+    color: var(--white);
+    background-color: var(--purple-600);
+}
